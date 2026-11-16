@@ -1,0 +1,17 @@
+{
+  "name": "taskly",
+  "version": "1.0.0",
+  "description": "Taskly — Gestión personal y de equipos con Supabase Free (Web & Android)",
+  "private": true,
+  "scripts": {
+    "start": "node web_simulator/server.js",
+    "dev": "node web_simulator/server.js",
+    "build": "node scripts/build-vercel.js",
+    "verify:vercel": "node scripts/verify-vercel-prod.js",
+    "admin:reset-user-b": "node scripts/admin-reset-user-b.js",
+    "test:supabase": "node web_simulator/test_supabase_live.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

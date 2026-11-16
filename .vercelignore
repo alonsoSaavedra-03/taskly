@@ -1,0 +1,24 @@
+# Excluir variables de entorno locales y secretos del despliegue en Vercel
+.env
+.env.*
+*.env
+
+# Excluir scripts administrativos y suites de pruebas locales
+scripts/admin-reset-user-b.js
+scripts/verify-vercel-prod.js
+web_simulator/test_*.js
+web_simulator/audit_*.js
+web_simulator/verify_*.js
+web_simulator/generate_*.js
+web_simulator/server.js
+web_simulator/runtime_db.json
+web_simulator/cloud_db.json
+web_simulator/taskly_db.json
+web_simulator/.env.example
+
+# Excluir carpetas que no forman parte del runtime web de Vercel
+flutter_app/
+supabase/
+node_modules/
+*.log
+*.md

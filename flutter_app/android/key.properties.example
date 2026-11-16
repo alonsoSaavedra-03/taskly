@@ -1,0 +1,6 @@
+# Copia este archivo a `android/key.properties` para firmar el APK/AAB de producción en Google Play.
+# NUNCA subas `key.properties` ni el archivo `.jks` al repositorio.
+storePassword=TU_STORE_PASSWORD
+keyPassword=TU_KEY_PASSWORD
+keyAlias=taskly_release_key
+storeFile=taskly-release-key.jks

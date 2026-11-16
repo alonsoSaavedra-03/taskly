@@ -1,0 +1,36 @@
+{
+  "databaseType": "Firebase Cloud Firestore (NoSQL Document Database)",
+  "collections": {
+    "users": {
+      "documentId": "{userId}",
+      "fields": {
+        "displayName": "string",
+        "email": "string",
+        "themePreferences": {
+          "isDarkMode": "boolean",
+          "accentColor": "string (HEX)",
+          "isCompactView": "boolean"
+        },
+        "registeredDevices": ["Android-Pixel8", "iOS-iPhone15Pro"]
+      },
+      "subcollections": {
+        "tasks": {
+          "documentId": "{taskId}",
+          "fields": {
+            "id": "string (UUID v4)",
+            "title": "string",
+            "description": "string",
+            "category": "string (Trabajo | Estudio | Personal | Equipo | Urgente)",
+            "priority": "string (alta | media | baja)",
+            "dueDate": "timestamp (ISO 8601 / Firestore Timestamp)",
+            "isCompleted": "boolean",
+            "hasReminder": "boolean",
+            "assignedTo": "string",
+            "lastModifiedByDevice": "string",
+            "updatedAt": "serverTimestamp"
+          }
+        }
+      }
+    }
+  }
+}
